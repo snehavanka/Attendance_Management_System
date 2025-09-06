@@ -20,7 +20,7 @@ def create_app():
     CORS(app, origins="http://localhost:5173")
     
     # ✅ Fix: JWT setup spelling corrected
-    app.config['JWT_SECRET_KEY'] = 'a7f4e53y848rfbsgrh6c7b9f8asha37fbwiq'
+    app.config['JWT_SECRET_KEY'] = 'a74567jhgf345678uygfertyhasha37fbwiq'
 
     jwt = JWTManager(app)
 
@@ -60,3 +60,4 @@ if __name__ == '__main__':
     print("✅ Connected to:", app.config['SQLALCHEMY_DATABASE_URI'])
 
     app.run(debug=True)
+
