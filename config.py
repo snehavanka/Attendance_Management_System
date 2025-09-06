@@ -8,7 +8,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY') or 'your-secret-key'  # Replace with a
 
 # MySQL Database Config
 DB_USER = 'root'
-DB_PASSWORD = 'Sneha@220'
+DB_PASSWORD = 'password@2123'
 DB_PASSWORD_ENCODED = quote_plus(DB_PASSWORD)  # Encode special characters like @
 DB_HOST = '127.0.0.1'
 DB_PORT = '3306'  # Make sure your MySQL is running on this port
@@ -20,3 +20,4 @@ SQLALCHEMY_TRACK_MODIFICATIONS = False
 
 # JWT Config
 JWT_SECRET_KEY = os.environ.get('JWT_SECRET_KEY') or 'your-jwt-secret'  # Replace with a strong key in production
+
