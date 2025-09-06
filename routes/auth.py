@@ -79,13 +79,13 @@ Your Attendance System Team
 
     msg = MIMEText(body)
     msg['Subject'] = subject
-    msg['From'] = 'snehavanka2006@gmail.com'  # Replace with your sender email
+    msg['From'] = 'example@gmail.com'  # Replace with your sender email
     msg['To'] = email
 
     try:
         smtp = smtplib.SMTP('smtp.gmail.com', 587)
         smtp.starttls()
-        smtp.login('snehavanka2006@gmail.com', 'xwtf zgxr gkls ysim')  # Use your Gmail app password here
+        smtp.login('example2006@gmail.com', 'wrfv zgxr gkls ysim')  # Use your Gmail app password here
         smtp.send_message(msg)
         smtp.quit()
         return jsonify({"msg": "Reset email sent"}), 200
@@ -124,3 +124,4 @@ def reset_password(token):
         return jsonify({"msg": "Commit failed", "error": str(e)}), 500
 
     return jsonify({"msg": "Password has been reset successfully"}), 200
+
