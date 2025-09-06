@@ -1,0 +1,181 @@
+.admin-dashboard-container {
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  background-color: #297ccf;
+  box-shadow: 0 2px 4px rgba(14, 8, 8, 0.05);
+}
+
+.nav-tabs {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-tab {
+  cursor: pointer;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 6px 6px 0 0;
+  border: 1px solid transparent;
+  border-bottom: 2px solid transparent;
+  color: #050a0e;
+  transition: all 0.3s ease;
+  background-color: transparent;
+}
+
+.nav-tab:hover {
+  color: #0d6efd;
+}
+
+.nav-tab.active {
+  color: #0d6efd;
+  border-color: #0d6efd #0d6efd white;
+  background-color: white;
+  font-weight: 700;
+  box-shadow: 0 -2px 8px rgba(13,110,253,0.2);
+}
+
+.logout-btn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 6px rgba(220,53,69,0.4);
+}
+
+.logout-btn:hover {
+  background-color: #b02a37;
+}
+
+.manage-user-section input,
+.manage-user-section select,
+.all-users-section input,
+.all-users-section select,
+.attendance-section input,
+.attendance-section select {
+  display: block;
+  margin: 8px 0;
+  padding: 8px 10px;
+  width: 100%;
+  max-width: 300px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-buttons {
+  margin-top: 10px;
+}
+
+.form-buttons button {
+  margin-right: 10px;
+  padding: 8px 14px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  background-color: #0d6efd;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.form-buttons button:hover {
+  background-color: #084bcc;
+}
+.user-info {
+  font-weight: 600;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.filter-container {
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+
+.filter-container input,
+.filter-container select {
+  max-width: 200px;
+  padding: 6px 8px;
+  font-size: 14px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+
+.filter-container button {
+  padding: 8px 16px;
+  font-weight: 600;
+  background-color: #198754;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.filter-container button:hover {
+  background-color: #146c43;
+}
+
+.users-table,
+.attendance-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.users-table th,
+.users-table td,
+.attendance-table th,
+.attendance-table td {
+  border: 1px solid #ddd;
+  padding: 8px 12px;
+  text-align: left;
+}
+
+.users-table th,
+.attendance-table th {
+  background-color: hsl(210, 71%, 51%);
+}
+
+.users-table tbody tr:nth-child(even),
+.attendance-table tbody tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+.users-table button {
+  margin-right: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 13px;
+  border-radius: 4px;
+  border: none;
+  background-color: #0d6efd;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.users-table button:hover {
+  background-color: #084bcc;
+}
+
+.attendance-table-container {
+  margin-top: 20px;
+}

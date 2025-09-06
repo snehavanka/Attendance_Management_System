@@ -1,0 +1,104 @@
+.teacher-dashboard {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 200px;
+  background: #f4f4f4;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  border-left: 1px solid #ccc;
+}
+
+.class-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: auto;
+}
+
+.class-btn {
+  padding: 8px;
+  border: none;
+  background: #ddd;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.class-btn.active {
+  background: #007bff;
+  color: white;
+}
+
+.logout-btn {
+  margin-top: 16px;
+  padding: 8px;
+  background: #dc3545;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.main-content {
+  flex: 1;
+  padding: 16px;
+  overflow-y: auto;
+}
+
+.welcome-text {
+  font-size: 18px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.filters {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.table-container {
+  max-height: calc(100vh - 200px);
+  overflow-y: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background: #007bff;
+  color: white;
+}
+
+td, th {
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+
+.limit-text {
+  color: red;
+  font-weight: bold;
+}
+
+.footer {
+  position: sticky;
+  bottom: 0;
+  background: white;
+  padding: 8px;
+  border-top: 1px solid #ccc;
+  text-align: right;
+}
+.footer button {
+  background: #28a745;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+}

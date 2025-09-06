@@ -1,0 +1,122 @@
+.dash {
+  min-height: 100vh;
+  background: #f8f9fa;
+  font-family: Arial, sans-serif;
+}
+
+.nav {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+  border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+}
+
+.nav-items {
+  display: flex;
+  gap: 15px;
+}
+
+.tab {
+  cursor: pointer;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.tab:hover {
+  background: #e9f2ff;
+}
+
+.tab-active {
+  background: #007bff;
+  color: white;
+}
+
+.logout-btn {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.logout-btn:hover {
+  background: #c82333;
+}
+
+/* Content */
+.content {
+  padding: 20px;
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+
+.tbl {
+  width: 100%;
+  background: white;
+  border-collapse: collapse;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.tbl th, .tbl td {
+  padding: 10px 18px; 
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.tbl th {
+  background: #2b8ced;
+  font-weight: bold;
+}
+
+.low-att {
+  background: #ffe6e6;
+}
+
+.low-text {
+  color: #b71c1c;
+  font-weight: bold;
+}
+
+.good-text {
+  color: #1b5e20;
+  font-weight: bold;
+}
+
+
+.overall {
+  margin-top: 15px;
+  padding: 12px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 6px;
+}
+
+.warn {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.good {
+  background: #d4edda;
+  color: #155724;
+}
